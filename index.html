@@ -3,24 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ShelfDrop</title>
+  <meta name="description" content="ShelfDrop is an iPhone audiobook player for importing DRM-free audiobooks from Files or a PC browser over local Wi-Fi.">
+  <title>ShelfDrop Audiobook Player</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell">
-    <header>
-      <p class="eyebrow">ShelfDrop</p>
-      <h1>Transfer from PC. Listen on iPhone.</h1>
-      <p class="lead">ShelfDrop is an offline-first audiobook app for importing and playing DRM-free audiobook files you already own.</p>
-    </header>
-
-    <section class="panel">
-      <h2>Useful Links</h2>
-      <div class="links">
-        <a href="privacy.html">Privacy Policy</a>
+  <header class="hero">
+    <nav class="site-nav" aria-label="ShelfDrop">
+      <a class="brand" href="index.html">ShelfDrop</a>
+      <div class="nav-links">
         <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+
+    <div class="hero-art" aria-hidden="true">
+      <img class="hero-shot hero-shot-main" src="assets/screenshots/02-now-playing.png" alt="">
+      <img class="hero-shot hero-shot-left" src="assets/screenshots/01-library.png" alt="">
+      <img class="hero-shot hero-shot-right" src="assets/screenshots/05-receive-start.png" alt="">
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">iPhone audiobook player</p>
+      <h1>ShelfDrop Audiobook Player</h1>
+      <p class="lead">Transfer DRM-free audiobooks from your PC to your iPhone over local Wi-Fi, then listen offline with saved progress, speed control, and sleep timer support.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-band" aria-label="ShelfDrop basics">
+      <div class="shell feature-grid">
+        <article>
+          <h2>PC uploads without a media server</h2>
+          <p>Start Receive mode, open the local address on your computer, and send audiobook files directly to ShelfDrop while both devices are on the same Wi-Fi network.</p>
+        </article>
+        <article>
+          <h2>Local library, offline playback</h2>
+          <p>Imported books are copied into ShelfDrop storage on your iPhone. Playback progress and listening settings stay with the local app library.</p>
+        </article>
+        <article>
+          <h2>Built for owned files</h2>
+          <p>ShelfDrop supports DRM-free audiobook files such as M4B, MP3, M4A, AAC, WAV, FLAC, folders, ZIP imports, and cover images.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screenshots-band" aria-label="ShelfDrop screenshots">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>Import, organize, and keep listening.</h2>
+        </div>
+        <div class="screenshot-strip">
+          <img src="assets/screenshots/01-library.png" alt="ShelfDrop library screen showing imported audiobooks.">
+          <img src="assets/screenshots/02-now-playing.png" alt="ShelfDrop now playing screen with audiobook controls.">
+          <img src="assets/screenshots/06-playback-speed.png" alt="ShelfDrop playback speed controls.">
+          <img src="assets/screenshots/08-sleep-timer.png" alt="ShelfDrop sleep timer controls.">
+          <img src="assets/screenshots/10-delete-book.png" alt="ShelfDrop delete book action.">
+        </div>
+      </div>
+    </section>
+
+    <section class="support-band">
+      <div class="shell support-callout">
+        <div>
+          <p class="eyebrow">Help</p>
+          <h2>Need support?</h2>
+          <p>Email <a href="mailto:akugri95@gmail.com">akugri95@gmail.com</a> with your iPhone model, iOS version, ShelfDrop build, and what happened.</p>
+        </div>
+        <a class="button primary" href="mailto:akugri95@gmail.com">Email Support</a>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>&copy; 2026 Kingdom Mutala Akugri</span>
+      <span><a href="privacy.html">Privacy</a> <a href="support.html">Support</a></span>
+    </div>
+  </footer>
 </body>
 </html>
