@@ -16,12 +16,12 @@
 
   <main class="shell prose">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: 2026-09-16</p>
+    <p class="muted">Last updated: 2026-10-24</p>
 
     <p>ShelfDrop is an offline-first audiobook app for importing and playing audiobook files you already own.</p>
 
     <h2>Summary</h2>
-    <p>ShelfDrop does not require an account, does not operate a hosted audiobook library, and does not upload your audiobook files to a ShelfDrop server.</p>
+    <p>Local imports, Wi-Fi Receive and local playback do not require a ShelfDrop account. Optional Sources connects directly to Audiobookshelf or WebDAV servers you choose. ShelfDrop does not operate a hosted audiobook library for users or upload your books to a ShelfDrop media service.</p>
 
     <h2>Data ShelfDrop Handles</h2>
     <p>ShelfDrop stores the following data locally on your device:</p>
@@ -31,6 +31,7 @@
       <li>Audiobook titles, authors, track information, duration, and file metadata needed for playback.</li>
       <li>Playback progress, playback speed, jump button settings, sleep timer preference, and import preferences.</li>
       <li>Temporary receive-mode upload files while an import is in progress.</li>
+      <li>Downloaded books, source connection records, listening history, bookmarks and disposable source caches.</li>
     </ul>
     <p>This data is stored in the app's local container on your device. Deleting a book from ShelfDrop removes the copied audiobook files and local records for that book.</p>
 
@@ -45,10 +46,31 @@
     </ul>
     <p>Receive mode uses your local network only. Audiobook files are transferred from your computer directly to your device.</p>
 
-    <h2>Data Collection</h2>
-    <p>ShelfDrop does not currently collect analytics, advertising identifiers, account data, contact data, precise location, or payment information.</p>
+    <h2>Camera QR Scanning</h2>
+    <p>If you choose <strong>Scan QR Code</strong> while entering a resume code, ShelfDrop asks for camera access so it can read a ShelfDrop resume QR code from another device.</p>
+    <ul>
+      <li>Camera QR scanning starts only after you choose to scan a resume code.</li>
+      <li>QR codes are decoded on your device.</li>
+      <li>ShelfDrop does not upload camera frames, photos, videos, or QR code contents to a ShelfDrop server.</li>
+      <li>You can skip camera scanning by pasting the text resume code instead.</li>
+    </ul>
+
+    <h2>Optional Sources</h2>
+    <p>When you add a source, ShelfDrop sends sign-in information and requests directly to that server. Source credentials and tokens are stored source-scoped in the device Keychain. Locally stored connection records and caches support browsing, playback and downloads. Use HTTPS for encrypted connections. Optional local HTTP connections are not encrypted and should be used only on a trusted network after the app's warning and consent.</p>
+    <p>Your server receives requests for books, artwork and media. Audiobookshelf can also receive listening position and completion updates for progress sync. WebDAV does not provide equivalent server progress sync. The server operator's privacy, access and retention practices apply; ShelfDrop does not control servers you configure. Do not enter credentials for a server you do not trust.</p>
+    <p>Downloaded books and local progress remain on your device. Removing a source does not automatically delete completed books already imported into Library. Deleting a local book does not delete the original from your server. Removing a connection does not itself delete records already retained by that server.</p>
+
+    <h2>Pro And Free Trial</h2>
+    <p>Apple processes the optional one-time Pro purchase, free seven-day trial and restores through StoreKit. ShelfDrop verifies purchase evidence on-device to decide access and the trial deadline; it has no ShelfDrop receipt-upload service and does not receive your card details. Local trial timing state supports deadline enforcement. A trial does not automatically become a paid purchase or subscription.</p>
+
+    <h2>Collection And Support</h2>
+    <p>ShelfDrop includes no advertising, analytics or third-party crash-reporting SDK. It does not send source credentials, books, listening history or purchase receipts to a developer-operated collection service. Optional source connections send data directly to the server you configure, so not all app activity stays on your device.</p>
     <p>ShelfDrop does not sell personal information.</p>
     <p>If you contact support, the information you choose to share may be used to respond to your request. If you use GitHub Issues for support, the information you post there may be public.</p>
+    <p>Do not send passwords, tokens, payment details or private books to support.</p>
+
+    <h2>Restricted Reviewer Demonstration</h2>
+    <p>Separate developer-operated demo servers provide generated sample audio and restricted test accounts for App Review. They are not a public hosting or registration service for app users. The Audiobookshelf demo retains test-account, playback-session and progress records in its dedicated database. Demo request/access logging is disabled at the demo gateway and routes; bounded infrastructure logs may contain operational errors. Demo data and credentials are retained for review and follow-up, then removed through an intentional administrative cleanup rather than an automatic expiry. Normal connections to servers you choose do not pass through these demo servers.</p>
 
     <h2>Apple Services</h2>
     <p>If you install ShelfDrop through TestFlight or the App Store, Apple may process information related to downloads, purchases, crash reports, TestFlight feedback, and App Store operations under Apple's terms and privacy policies.</p>
@@ -60,7 +82,7 @@
     <p>ShelfDrop is not designed to collect personal information from children.</p>
 
     <h2>Changes</h2>
-    <p>This policy may be updated as ShelfDrop changes. If ShelfDrop later adds accounts, cloud sync, paid services, analytics, crash reporting SDKs, or hosted metadata features, this policy will be updated before those features are released.</p>
+    <p>This policy may be updated as ShelfDrop changes. Material changes to data handling, including any future developer-operated accounts, hosting, analytics or crash-reporting services, will be reflected here before those features are released.</p>
 
     <h2>Contact</h2>
     <p>For privacy or support questions, email <a href="mailto:akugri95@gmail.com">akugri95@gmail.com</a> or use <a href="support.html">ShelfDrop Support</a>.</p>
